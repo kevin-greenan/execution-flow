@@ -1,0 +1,18 @@
+{
+  "sample-execution": {
+    "name": "sample",
+    "dockerfile": "~/Projects/Docker/execution-flow/sample/",
+    "platform": "linux/amd64",
+    "tag": "sample:latest",
+    "volumes": {
+      "~/Projects/Docker/execution-flow/controller/outputs/": {
+        "bind": "/home/executor/outputs",
+        "mode": "rw"
+      },
+      "~/Projects/Docker/execution-flow/controller/inputs/": {
+        "bind": "/home/executor/inputs",
+        "mode": "ro"
+      }
+    }
+  }
+}
