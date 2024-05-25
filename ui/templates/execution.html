@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% block title %}{{ execution_name }}{% endblock %} {%
+block content %}
+<h1>{{ execution_name }}</h1>
+<h2>Registration</h2>
+<div class="execution">
+    <table>
+        <tr>
+            <td>
+                <pre><code>{{ execution_config }}</code></pre>
+            </td>
+        </tr>
+    </table>
+    <h2>Dockerfile</h2>
+    <table>
+        <tr>
+            <td>
+                <pre><code>{{ dockerfile }}</code></pre>
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

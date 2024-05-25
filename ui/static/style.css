@@ -1,0 +1,50 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+}
+
+table {
+    font-family: "Roboto Mono", monospace;
+    font-size: 13px;
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+td:hover {
+    color: #007bff;
+}
+
+.execution table,
+.execution td:hover {
+    background-color: #e2e2e2;
+    color: #333;
+}
