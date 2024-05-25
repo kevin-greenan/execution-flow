@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block title %}Execution Flow{% endblock %} {% block
+content %}
+<h1>Execution Flow</h1>
+<p>A local container orchestration platform</p>
+<h2>Registered Executions</h2>
+<table>
+    <thead>
+        <tr>
+            {% for header in data[0] %}
+            <th>{{ header }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data[1:] %}
+        <tr>
+            {% for cell in row %}
+            <td onclick="handleCellClick('{{ row[0] }}')">{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<script>
+    function handleCellClick(exec_name) {
+        const url = `/${exec_name}`;
+        window.location.href = url;
+    }
+</script>
+{% endblock %}
